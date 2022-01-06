@@ -2,6 +2,10 @@
 
 selectTable:users:name,id
 
+php artisan infyom:scaffold User --fromTable --tableName=users --ignoreFields=email_verified_at,remember_token
+
+
+
 otras opciones
 :api \$MODEL_NAME$ --paginate=10  
 :scaffold \$MODEL_NAME --datatables=true  
